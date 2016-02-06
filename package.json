@@ -1,0 +1,49 @@
+{
+  "name": "fliptweet",
+  "version": "0.2.0",
+  "description": "Article-only TweetReader",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base public",
+    "init": "npm install",
+    "start": "parallelshell 'npm run webpack-node' 'npm run webpack-server-browser' 'npm run nodemon'"
+  },
+  "author": "Mike Bijon",
+  "license": "MIT",
+  "transform": [
+    []
+  ],
+  "dependencies": {
+    "bower": "^1.7.7",
+    "dotenv-safe": "~2.2.0",
+    "express": "~4.13.4",
+    "express-handlebars": "~3.0.0",
+    "fs-promise": "^0.4.1",
+    "handlebars-loader": "^1.1.4",
+    "http-proxy": "^1.13.1",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.28.2",
+    "react-dom": "^0.14.7",
+    "twitter": "~1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "babel-plugin-transform-react-jsx": "^6.4.0",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "nodemon": "~1.8.1",
+    "npm-check-updates": "^2.5.8",
+    "path": "^0.12.7",
+    "uglify-js": "^2.6.1",
+    "webpack": "^1.12.13",
+    "webpack-config-babel": "^0.2.0",
+    "webpack-dev-server": "^1.14.1",
+    "yargs": "^3.32.0"
+  }
+}
